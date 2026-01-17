@@ -1,29 +1,12 @@
-<header class="site-header navbar navbar-expand-lg" data-nav-container>
-    <div class="container-fluid site-header__inner">
-      <a class="navbar-brand site-header__logo" href="index.html" aria-label="Inici · IV Jornades de Cuina Tradicional Valenciana">
-        <span class="site-header__logo-mark" aria-hidden="true"></span>
-        <span class="site-header__logo-text">IV Jornades de Cuina Tradicional Valenciana</span>
-      </a>
-  
-      <button
-        class="navbar-toggler site-header__toggle"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#main-menu"
-        aria-controls="main-menu"
-        aria-expanded="false"
-        aria-label="Obrir o tancar el menú principal"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-  
-      <nav class="collapse navbar-collapse site-header__nav" id="main-menu" aria-label="Navegació principal">
-        <ul class="navbar-nav ms-auto site-nav">
-          <li class="nav-item site-nav__item"><a class="nav-link site-nav__link" href="index.html">Inici</a></li>
-          <li class="nav-item site-nav__item"><a class="nav-link site-nav__link" href="article.html">Article</a></li>
-          <li class="nav-item site-nav__item"><a class="nav-link site-nav__link" href="extra.html">Contacte i galeria</a></li>
-        </ul>
-      </nav>
-    </div>
-    
-  </header>
+<header class="sticky top-0 z-20 backdrop-blur bg-white/80 border-b border-black/10" data-nav-container>
+  <nav class="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-3" aria-label="Navegació principal">
+    <a class="font-title text-lg sm:text-xl tracking-tight" href="index.html" aria-label="Inici · IV Jornades de Cuina Tradicional Valenciana">
+      IV Jornades de Cuina Tradicional Valenciana
+    </a>
+    <ul class="flex flex-wrap items-center gap-3 sm:gap-5 text-sm font-bold">
+      <li><a class="hover:underline underline-offset-4" href="index.html">Inici</a></li>
+      <li><a class="hover:underline underline-offset-4" href="article.html">Article</a></li>
+      <li><a class="hover:underline underline-offset-4" href="extra.html">Contacte i galeria</a></li>
+    </ul>
+  </nav>
+</header>

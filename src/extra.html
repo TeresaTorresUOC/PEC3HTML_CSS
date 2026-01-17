@@ -3,145 +3,156 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <link rel="stylesheet" href="./assets/styles/tailwind.css" />
     <title>Contacte i galeria · IV Jornades de Cuina Tradicional Valenciana</title>
   </head>
-  <body class="site" data-page="extra">
+  <body class="font-body text-black bg-slate-50">
     <include src="./views/header.html"></include>
 
-    <main class="page page--extra" data-container>
-      <header class="page__hero" aria-labelledby="contacte-title">
-        <p class="page__kicker">Participa</p>
-        <h1 class="page__title" id="contacte-title">Contacte i galeria</h1>
-        <p class="page__lead">Resol dubtes, inscriu-te a les jornades i inspira't amb els plats que degustarem.</p>
+    <main class="mx-auto max-w-6xl px-4 py-10 md:py-16 space-y-10">
+      <header class="space-y-3">
+        <p class="inline-flex items-center rounded-full bg-brand-mint px-3 py-1 text-xs font-bold">Participa</p>
+        <h1 class="font-title text-3xl sm:text-4xl md:text-5xl leading-tight">Contacte i galeria</h1>
+        <p class="max-w-2xl text-lg text-black/80">
+          Resol dubtes, inscriu-te a les jornades i inspira't amb els plats que degustarem.
+          </p>
       </header>
 
-      <section class="gallery-card" aria-labelledby="gallery-title">
-        <div class="gallery-card__header">
-          <h2 class="gallery-card__title" id="gallery-title">Galeria de plats</h2>
-          <p class="gallery-card__subtitle">Plats que representen les arrels i l'evolució de la cuina valenciana.</p>
+      <section class="card space-y-5" aria-labelledby="gallery-title">
+        <div>
+          <h2 class="font-title text-2xl" id="gallery-title">Galeria de plats</h2>
+          <p class="text-sm text-black/70">Plats que representen les arrels i l'evolució de la cuina valenciana.</p>
         </div>
-        <div class="gallery" data-gallery-container>
-          <figure class="gallery__item">
-            <img src="./assets/images/extra/paella-valenciana.webp" alt="Paella valenciana tradicional" />
-            <figcaption class="gallery__caption">Paella valenciana</figcaption>
+        <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <figure class="overflow-hidden rounded-xl border border-black/10 bg-white shadow-sm">
+            <img class="h-48 w-full object-cover" src="./assets/images/extra/paella-valenciana.webp" alt="Paella valenciana tradicional" />
+            <figcaption class="px-3 py-2 text-sm text-black/70">Paella valenciana</figcaption>
+          </figure>
+          <figure class="overflow-hidden rounded-xl border border-black/10 bg-white shadow-sm">
+            <img class="h-48 w-full object-cover" src="./assets/images/extra/arros-al-forn.webp" alt="Cassola d'arròs al forn amb cigrons i botifarra" />
+            <figcaption class="px-3 py-2 text-sm text-black/70">Arròs al forn</figcaption>
           </figure>
           <figure class="gallery__item">
-            <img src="./assets/images/extra/arros-al-forn.webp" alt="Cassola d'arròs al forn amb cigrons i botifarra" />
-            <figcaption class="gallery__caption">Arròs al forn</figcaption>
+            <figure class="overflow-hidden rounded-xl border border-black/10 bg-white shadow-sm">
+              <img class="h-48 w-full object-cover" src="./assets/images/extra/fideu-mar.webp" alt="Fideuà marinera amb allioli suau" />
+              <figcaption class="px-3 py-2 text-sm text-black/70">Fideuà</figcaption>
           </figure>
-          <figure class="gallery__item">
-            <img src="./assets/images/extra/fideu-mar.webp" alt="Fideuà marinera amb allioli suau" />
-            <figcaption class="gallery__caption">Fideuà marinera</figcaption>
+          <figure class="overflow-hidden rounded-xl border border-black/10 bg-white shadow-sm">
+            <img class="h-48 w-full object-cover" src="./assets/images/extra/dolcos_valencia.webp" alt="Safata de dolços valencians amb taronja" />
+            <figcaption class="px-3 py-2 text-sm text-black/70">Mocadorà</figcaption>
           </figure>
-          <figure class="gallery__item">
-            <img src="./assets/images/extra/dolcos_valencia.webp" alt="Safata de dolços valencians amb taronja" />
-            <figcaption class="gallery__caption">Dolços de taronja</figcaption>
-          </figure>
-          <figure class="gallery__item">
-            <img src="./assets/images/extra/suquet-peix.webp" alt="Suquet de peix amb patata i cloïsses" />
-            <figcaption class="gallery__caption">Suquet de peix</figcaption>
+          <figure class="overflow-hidden rounded-xl border border-black/10 bg-white shadow-sm">
+            <img class="h-48 w-full object-cover" src="./assets/images/extra/suquet-peix.webp" alt="Suquet de peix amb patata i cloïsses" />
+            <figcaption class="px-3 py-2 text-sm text-black/70">Suquet de peix</figcaption>
           </figure>
         </div>
       </section>
 
-      <div class="forms-stack">
-        <section class="registration" aria-labelledby="inscripcio-title" id="formulari-extra">
-          <div class="registration__panel">
-            <p class="registration__eyebrow">Formulari d'inscripció</p>
-            <h2 class="registration__title" id="inscripcio-title">Reserva la teua plaça</h2>
-            <p class="registration__lead">Indica les teues dades i el torn preferit; rebràs un correu de confirmació amb el programa complet.</p>
-
-            <form
-            class="registration__form needs-validation"
+      <div class="grid gap-6 lg:grid-cols-2">
+        <section class="card space-y-4" aria-labelledby="inscripcio-title" id="formulari-extra">
+          <div class="space-y-2">
+            <p class="text-xs font-bold uppercase tracking-wide text-black/60">Formulari d'inscripció</p>
+            <h2 class="font-title text-2xl" id="inscripcio-title">Reserva la teua plaça</h2>
+            <p class="text-sm text-black/70">
+              Indica les teues dades i el torn preferit; rebràs un correu de confirmació amb el programa complet.
+            </p>
+          </div>
+          <form
+            class="space-y-4"
             name="inscripcio-jornades"
             method="post"
             data-netlify="true"
             netlify-honeypot="bot-field"
           >
             <input type="hidden" name="form-name" value="inscripcio-jornades" />
-            <p class="visually-hidden">
+            <p class="sr-only">
               <label>Si ets humà, deixa aquest camp buit <input name="bot-field" /></label>
             </p>
-            <div class="registration__grid">
-              <label class="form-label" for="registre-nom">Nom i cognoms</label>
-              <input class="form-control" type="text" id="registre-nom" name="nom" placeholder="Nom complet" required />
-
-              <label class="form-label" for="registre-email">Correu electrònic</label>
-              <input class="form-control" type="email" id="registre-email" name="email" placeholder="nom@exemple.com" required />
-
-              <label class="form-label" for="registre-telefon">Telèfon de contacte</label>
-                <input class="form-control" type="tel" id="registre-telefon" name="telefon" placeholder="600 000 000" />
-
-                <label class="form-label" for="registre-modalitat">Modalitat</label>
-                <select class="form-select" id="registre-modalitat" name="modalitat" required>
+            <div class="space-y-3">
+              <div class="space-y-1">
+                <label class="text-sm font-semibold" for="registre-nom">Nom i cognoms</label>
+                <input class="w-full rounded-lg border border-black/20 px-3 py-2" type="text" id="registre-nom" name="nom" placeholder="Nom complet" required />
+              </div>
+              <div class="space-y-1">
+                <label class="text-sm font-semibold" for="registre-email">Correu electrònic</label>
+                <input class="w-full rounded-lg border border-black/20 px-3 py-2" type="email" id="registre-email" name="email" placeholder="nom@exemple.com" required />
+              </div>
+              <div class="space-y-1">
+                <label class="text-sm font-semibold" for="registre-telefon">Telèfon de contacte</label>
+                <input class="w-full rounded-lg border border-black/20 px-3 py-2" type="tel" id="registre-telefon" name="telefon" placeholder="600 000 000" />
+              </div>
+              <div class="space-y-1">
+                <label class="text-sm font-semibold" for="registre-modalitat">Modalitat</label>
+                <select class="w-full rounded-lg border border-black/20 px-3 py-2" id="registre-modalitat" name="modalitat" required>
                   <option value="">Tria una opció</option>
                   <option>Pack complet 3 dies</option>
                   <option>Dissabte + diumenge</option>
                   <option>Tastos vesprada</option>
                 </select>
 
-                <label class="form-label" for="registre-comentaris">Comentaris o al·lèrgies</label>
-                <textarea class="form-control" id="registre-comentaris" name="comentaris" rows="3" placeholder="Escriu qualsevol detall rellevant"></textarea>
-
-                <div class="form-check registration__accept">
-                  <input class="form-check-input" type="checkbox" id="registre-politica" name="politica" required />
-                  <label class="form-check-label" for="registre-politica">Accepto la política de dades de les jornades</label>
-                </div>
-                <button class="btn btn-primary registration__submit" type="submit">Confirmar inscripció</button>
-              </form>
+              </div>
+              <div class="space-y-1">
+                <label class="text-sm font-semibold" for="registre-comentaris">Comentaris o al·lèrgies</label>
+                <textarea class="w-full rounded-lg border border-black/20 px-3 py-2" id="registre-comentaris" name="comentaris" rows="3" placeholder="Escriu qualsevol detall rellevant"></textarea>
+              </div>
+              <div class="flex items-start gap-2">
+                <input class="mt-1 h-4 w-4 rounded border border-black/30" type="checkbox" id="registre-politica" name="politica" required />
+                <label class="text-sm text-black/70" for="registre-politica">Accepto la política de dades de les jornades</label>
+              </div>
             </div>
-          </section>
-
-     
-        <section class="contact-card" aria-labelledby="form-title">
-          <div class="contact-card__header">
-            <h2 class="contact-card__title" id="form-title">Contacte</h2>
-            <p class="contact-card__subtitle">Per a inscripcions, informació general o propostes de tallers.</p>
+            <button class="btn-primary w-full sm:w-auto" type="submit">Confirmar inscripció</button>
+          </form>
+        </section>
+        <section class="card space-y-4" aria-labelledby="form-title">
+          <div class="space-y-2">
+            <h2 class="font-title text-2xl" id="form-title">Contacte</h2>
+            <p class="text-sm text-black/70">Per a inscripcions, informació general o propostes de tallers.</p>
           </div>
           <form
-          class="contact-card__form needs-validation"
+          class="space-y-4"
             name="contacte-jornades"
             method="post"
             data-netlify="true"
-            netlify-honeypot="bot-field"
-          >
+            netlify-honeypot="bot-field">
+
             <input type="hidden" name="form-name" value="contacte-jornades" />
-            <p class="visually-hidden">
+            <p class="sr-only">
               <label>Si ets humà, deixa aquest camp buit <input name="bot-field" /></label>
             </p>
-            <div class="mb-3">
-              <label class="form-label" for="full-name">Nom complet</label>
-              <input class="form-control" type="text" id="full-name" name="nom" placeholder="Nom i cognoms" required />
+            <div class="space-y-1">
+              <label class="text-sm font-semibold" for="full-name">Nom complet</label>
+              <input class="w-full rounded-lg border border-black/20 px-3 py-2" type="text" id="full-name" name="nom" placeholder="Nom i cognoms" required />
             </div>
-            <div class="mb-3">
-              <label class="form-label" for="email">Correu electrònic</label>
-              <input class="form-control" type="email" id="email" name="email" placeholder="nom@exemple.com" required />
+            <div class="space-y-1">
+              <label class="text-sm font-semibold" for="email">Correu electrònic</label>
+              <input class="w-full rounded-lg border border-black/20 px-3 py-2" type="email" id="email" name="email" placeholder="nom@exemple.com" required />
             </div>
-            <div class="mb-3">
-              <label class="form-label" for="tipus">Tipus de consulta</label>
-              <select class="form-select" id="tipus" name="tipus" required>
+            <div class="space-y-1">
+              <label class="text-sm font-semibold" for="tipus">Tipus de consulta</label>
+              <select class="w-full rounded-lg border border-black/20 px-3 py-2" id="tipus" name="tipus" required>
                 <option value="">Selecciona una opció</option>
                 <option>Inscripció</option>
                 <option>Informació general</option>
                 <option>Proposta de taller</option>
               </select>
             </div>
-            <div class="mb-3">
-              <label class="form-label" for="missatge">Missatge</label>
-              <textarea class="form-control" id="missatge" name="missatge" rows="4" placeholder="Escriu el teu missatge"></textarea>
+            <div class="space-y-1">
+              <label class="text-sm font-semibold" for="missatge">Missatge</label>
+              <textarea class="w-full rounded-lg border border-black/20 px-3 py-2" id="missatge" name="missatge" rows="4" placeholder="Escriu el teu missatge"></textarea>
             </div>
-            <div class="form-check mb-3">
-              <input class="form-check-input" type="checkbox" id="politiques" name="politiques" required />
-              <label class="form-check-label" for="politiques">Accepto la política de dades de les jornades</label>
+            <div class="flex items-start gap-2">
+              <input class="mt-1 h-4 w-4 rounded border border-black/30" type="checkbox" id="politiques" name="politiques" required />
+              <label class="text-sm text-black/70" for="politiques">Accepto la política de dades de les jornades</label>
             </div>
-            <button class="btn btn-primary contact-card__submit" type="submit">Enviar missatge</button>
-            <p class="contact-card__helper">* Formulari preparat per a Netlify Forms.</p>
+            <button class="btn-primary w-full sm:w-auto" type="submit">Enviar missatge</button>
+            <p class="text-xs text-black/60">* Formulari preparat per a Netlify Forms.</p>
           </form>
         </section>
       </div>
     </main>
+
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
+
   </body> 
 </html>

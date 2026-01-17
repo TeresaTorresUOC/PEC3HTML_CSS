@@ -3,26 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" /><!-- do not remove this line! -->
+    <link rel="stylesheet" href="./assets/styles/tailwind.css" />
     <title>Article · IV Jornades de Cuina Tradicional Valenciana</title>
   </head>
-  <body class="site" data-page="article">
+  <body class="font-body text-black bg-slate-50">
     <include src="./views/header.html"></include>
 
-    <main class="page page--article" data-container>
-      <article class="article" aria-labelledby="article-title">
-        <figure class="article__hero-media">
-          <img src="./assets/images/article/port-borriana.webp" alt="Port de Borriana amb barques pesqueres" />
-          <figcaption>El mar de Borriana marca el ritme dels suquets i dels arrossos a les jornades.</figcaption>
+    <main class="mx-auto max-w-4xl px-4 py-10 md:py-16 space-y-10">
+      <article class="space-y-8" aria-labelledby="article-title">
+        <figure class="overflow-hidden rounded-2xl border border-black/10 bg-white shadow-sm">
+          <img class="h-64 w-full object-cover sm:h-80" src="./assets/images/article/port-borriana.webp" alt="Port de Borriana amb barques pesqueres" />
+          <figcaption class="px-4 py-3 text-sm text-black/70">
+            El mar de Borriana marca el ritme dels suquets i dels arrossos a les jornades.
+          </figcaption>
         </figure>
-        <header class="article__header">
-          <p class="article__kicker">Crònica de les jornades</p>
-          <h1 class="article__title" id="article-title">Borriana celebra la IV Jornada de Cuina Tradicional Valenciana</h1>
-          <p class="article__subtitle">Del 23 al 25 de gener de 2026, la ciutat es converteix en capital gastronòmica.</p>
-          <p class="article__meta"><span class="article__author">Redacció Jornades</span> · <time datetime="2026-01-26">26 de gener de 2026</time></p>
+        <header class="space-y-3">
+          <p class="inline-flex items-center rounded-full bg-brand-mint px-3 py-1 text-xs font-bold">Crònica de les jornades</p>
+          <h1 class="font-title text-3xl sm:text-4xl md:text-5xl leading-tight" id="article-title">
+            Borriana celebra la IV Jornada de Cuina Tradicional Valenciana
+          </h1>
+          <p class="text-lg text-black/80">
+            Del 23 al 25 de gener de 2026, la ciutat es converteix en capital gastronòmica.
+          </p>
+          <p class="text-sm font-semibold text-black/70">
+            <span class="font-bold">Redacció Jornades</span> · <time datetime="2026-01-26">26 de gener de 2026</time>
+          </p>
         </header>
 
-        <div class="article-content" data-article-container>
+        <div class="space-y-6 text-base leading-7">
           <p>
             Borriana torna a fer bandera de la cuina tradicional valenciana amb unes jornades que reivindiquen el receptari de l'horta i de la costa.
             Les activitats combinen divulgació, degustacions i espais per conversar amb els qui mantenen viu el patrimoni gastronòmic.
@@ -39,29 +47,31 @@
             Tallers de fumets, tastos d'arrossos i xerrades sobre varietats de taronja són algunes de les activitats previstes. Les sessions estan pensades
             per a públic familiar i per a professionals que vulguen actualitzar coneixements sense renunciar a la tradició.
           </p>
-          <figure class="article__media article__media--inline">
-            <img src="./assets/images/article/detall-paella.webp" alt="Detall d'una paella valenciana amb garrofó" />
-            <figcaption>Una paella valenciana feta amb arròs de proximitat i garrofó fresc.</figcaption>
+          <figure class="overflow-hidden rounded-2xl border border-black/10 bg-white shadow-sm">
+            <img class="h-64 w-full object-cover sm:h-72" src="./assets/images/article/detall-paella.webp" alt="Detall d'una paella valenciana amb garrofó" />
+            <figcaption class="px-4 py-3 text-sm text-black/70">
+              Una paella valenciana feta amb arròs de proximitat i garrofó fresc.
+            </figcaption>
+
           </figure>
 
-          <blockquote class="article__quote">
+          <blockquote class="border-l-4 border-brand-amber bg-white/90 p-4 italic text-black/80">
             “Cuinar a Borriana és parlar de memòria, de l'arròs que omplia cassoles i de les mans que ensenyaven a remenar el sofregit sense pressa.”
-            <cite>— Coordinació de les IV Jornades</cite>
-      
-           </blockquote>
-           <h2>Activitats destacades</h2>
-           <ul class="article__list">
-             <li>Taller de paella a la llenya amb Amparo Sorolla i productes del mercat.</li>
-             <li>Ruta pel port amb degustació de suquet dirigida per Joan Mataró.</li>
-             <li>Xerrada sobre patrimoni culinari i receptaris antics amb Henar Llop.</li>
-             <li>Showcooking creatiu de plats d'horta reinterpretats per Sònia Garcia.</li>
-           </ul>
-         </div>
+            <cite class="mt-2 block text-sm font-semibold not-italic text-black/70">— Coordinació de les IV Jornades</cite>
+          </blockquote>
+
+          <h2 class="font-title text-2xl">Activitats destacades</h2>
+          <ul class="list-disc space-y-2 pl-6">
+            <li>Taller de paella a la llenya amb Amparo Sorolla i productes del mercat.</li>
+            <li>Ruta pel port amb degustació de suquet dirigida per Joan Mataró.</li>
+            <li>Xerrada sobre patrimoni culinari i receptaris antics amb Henar Llop.</li>
+            <li>Showcooking creatiu de plats d'horta reinterpretats per Sònia Garcia.</li>
+          </ul>
+        </div>
       </article>
     </main>
 
     <include src="./views/footer.html"></include>
     <script type="module" src="./assets/scripts/main.js"></script>
   </body>
-
 </html>
