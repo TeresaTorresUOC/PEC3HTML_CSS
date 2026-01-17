@@ -3,77 +3,183 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
       href="https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./assets/styles/tailwind.css" />
-    <link rel="stylesheet" href="./assets/styles/main.scss" />
 
     <title>Inici · IV Jornades de Cuina Tradicional Valenciana</title>
   </head>
-  <body class="site" data-page="home">
-    <include src="./views/header.html"></include>
-    
-    <main class="page page--home">
-      <section class="poster" aria-label="Cartell principal de les jornades">
-        <div class="poster__pattern" aria-hidden="true"></div>
-        <nav class="poster__nav" aria-label="Identitat de les jornades">
-          <p class="poster__nav-title">IV Jornades de Cuina Tradicional Valenciana 2026</p>
-        </nav>
-        <header class="poster__hero" aria-labelledby="hero-title">
-          <p class="poster__eyebrow">Borriana (Castelló) · 23–25 gener 2026</p>
-          <h1 class="text-3xl font-bold underline" id="hero-title">IV Jornades de Cuina Tradicional Valenciana</h1>
-          <p class="poster__subtitle">
-            Tres dies per posar en valor els sabors de l'horta i de la mar amb tallers, degustacions i converses.
-          </p>
-          <div class="poster__meta">
-            <span class="poster__tagline">Cuina de mercat · Producte local · Receptari mediterrani</span>
-            <a class="btn btn-primary poster__cta" href="article.html">Consulta el programa</a>
-          </div>
-        </header>
-        <aside class="poster__stamp" aria-label="Dades principals">
-          <p class="poster__stamp-date">23 · 24 · 25</p>
-          <p class="poster__stamp-location">Gener 2026 · Plaça Major</p>
-          <p class="poster__stamp-note">Inscripció oberta · Places limitades</p>
-        </aside>
 
-        <div class="poster__cta-panel" aria-label="Accions destacades">
-          <p class="poster__cta-title">Gastronomia mediterrània</p>
-          <p class="poster__cta-copy">Tastos guiats, showcookings i maridatges amb producte de temporada.</p>
-          <a class="btn btn-light poster__cta-secondary" href="extra.html">Vull apuntar-m'hi</a>
-        </div>
-        <section class="poster__grid" aria-label="Activitats principals">
-          <article class="poster-card">
-            <h2 class="poster-card__title">Cuina de l'horta i de la mar</h2>
-            <p class="poster-card__text">Recorregut pels arrossos, verdures i peixos de proximitat amb tastos a l'aire lliure.</p>
-            <ul class="poster-card__list">
-              <li>Showcookings amb producte del mercat</li>
-              <li>Tastos guiats amb maridatge cítric</li>
-              <li>Espais familiars per aprendre receptes</li>
+  <body class="font-body text-black">
+    <div
+      class="min-h-screen bg-cover bg-center"
+      style="background-image: url('./assets/images/index/culleres.png')"
+    >
+      
+      <div class="min-h-screen bg-white/75">
+       
+        <header class="sticky top-0 z-20 backdrop-blur bg-white/80 border-b border-black/10">
+          <nav class="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between gap-4">
+            <a class="font-title text-lg sm:text-xl tracking-tight" href="./index.html">
+              IV Jornades
+            </a>
+
+            <ul class="flex items-center gap-3 sm:gap-5 text-sm font-bold">
+              <li>
+                <a class="hover:underline underline-offset-4" href="./article.html">
+                  Programa
+                </a>
+              </li>
+              <li>
+                <a class="hover:underline underline-offset-4" href="./extra.html">
+                  Inscripció
+                </a>
+              </li>
             </ul>
-          </article>
-          <article class="poster-card">
-            <h2 class="poster-card__title">Converses i memòria</h2>
-            <p class="poster-card__text">Taules rodones sobre receptari tradicional, sostenibilitat i innovació gastronòmica.</p>
-            <div class="poster-card__chips">
-              <span class="badge rounded-pill text-bg-warning">Patrimoni</span>
-              <span class="badge rounded-pill text-bg-light">Sostenibilitat</span>
-              <span class="badge rounded-pill text-bg-dark">Arrossos</span>
-            </div>
-          </article>
-          <article class="poster-card">
-            <h2 class="poster-card__title">Ruta de mercats</h2>
-            <p class="poster-card__text">Visites a la llotja i al mercat per conéixer peix, cítrics i productors locals.</p>
-            <p class="poster-card__quote">“Cuina que connecta terra i mar amb el ritme del mercat”. <cite>Equip de coordinació</cite></p>
-            <a class="btn btn-outline-primary poster-card__link" href="extra.html">Descobreix la ruta</a>
-          </article>
-        </section>
-      </section>
-    </main>
+          </nav>
+        </header>
 
-    <include src="./views/footer.html"></include>
+        <main class="mx-auto max-w-6xl px-4 py-10 md:py-16">
+          <section class="grid gap-8 md:grid-cols-12 items-end">
+          
+            <div class="md:col-span-7 space-y-5">
+              <p class="inline-flex items-center rounded-full px-3 py-1 text-xs font-bold bg-brand-mint">
+                Borriana (Castelló) · 23–25 gener 2026
+              </p>
+
+              <h1 class="font-title text-4xl sm:text-5xl md:text-6xl leading-[0.95]">
+                IV Jornades de Cuina<br />
+                <span class="underline decoration-brand-amber decoration-8 underline-offset-4">
+                  Tradicional Valenciana
+                </span>
+              </h1>
+
+              <p class="max-w-prose text-base sm:text-lg">
+                Tres dies per posar en valor els sabors de l'horta i de la mar amb tallers,
+                degustacions i converses.
+              </p>
+
+              <div class="flex flex-wrap gap-3 pt-2">
+                <a class="btn-primary" href="./article.html">
+                  Consulta el programa
+                </a>
+
+                <a class="btn-aqua" href="./extra.html">
+                  Vull apuntar-m'hi
+                </a>
+              </div>
+
+              <p class="text-sm font-bold">
+                Cuina de mercat · Producte local · Receptari mediterrani
+              </p>
+            </div>
+
+            <aside class="md:col-span-5">
+              <div class="card space-y-3">
+                <p class="font-title text-2xl">Dades principals</p>
+
+                <div class="grid grid-cols-2 gap-3 text-sm">
+                  <div class="rounded-xl bg-brand-mint/60 p-3">
+                    <p class="text-xs font-bold opacity-80">Dates</p>
+                    <p class="font-bold">23 · 24 · 25</p>
+                    <p class="opacity-80">Gener 2026</p>
+                  </div>
+
+                  <div class="rounded-xl bg-brand-aqua/40 p-3">
+                    <p class="text-xs font-bold opacity-80">Lloc</p>
+                    <p class="font-bold">Plaça Major</p>
+                    <p class="opacity-80">Borriana</p>
+                  </div>
+
+                  <div class="rounded-xl bg-brand-amber/40 p-3 col-span-2">
+                    <p class="text-xs font-bold opacity-80">Inscripció</p>
+                    <p class="font-bold">Oberta · Places limitades</p>
+                  </div>
+                </div>
+
+                <p class="text-xs opacity-80">
+                  Aquest index és el “pòster” i enllaça a les 2 pàgines de la PEC: <b>article</b> i <b>extra</b>.
+                </p>
+              </div>
+            </aside>
+
+            <!-- Cards -->
+            <div class="md:col-span-12 grid gap-4 md:grid-cols-3 pt-2">
+              <article class="card space-y-3">
+                <h2 class="font-title text-xl">Cuina de l'horta i de la mar</h2>
+                <p class="text-sm">
+                  Recorregut pels arrossos, verdures i peixos de proximitat amb tastos a l'aire lliure.
+                </p>
+                <ul class="text-sm list-disc pl-5 space-y-1">
+                  <li>Showcookings amb producte del mercat</li>
+                  <li>Tastos guiats amb maridatge cítric</li>
+                  <li>Espais familiars per aprendre receptes</li>
+                </ul>
+              </article>
+
+              <article class="card space-y-3">
+                <h2 class="font-title text-xl">Converses i memòria</h2>
+                <p class="text-sm">
+                  Taules rodones sobre receptari tradicional, sostenibilat i innovació gastronòmica.
+                </p>
+                <div class="flex flex-wrap gap-2 pt-1">
+                  <span class="rounded-full px-3 py-1 text-xs font-bold bg-brand-amber">Patrimoni</span>
+                  <span class="rounded-full px-3 py-1 text-xs font-bold bg-brand-mint">Sostenibilitat</span>
+                  <span class="rounded-full px-3 py-1 text-xs font-bold bg-brand-aqua">Arrossos</span>
+                </div>
+              </article>
+
+              <article class="card space-y-3">
+                <h2 class="font-title text-xl">Ruta de mercats</h2>
+                <p class="text-sm">
+                  Visites a la llotja i al mercat per conéixer peix, cítrics i productors locals.
+                </p>
+                <p class="text-sm italic">
+                  “Cuina que connecta terra i mar amb el ritme del mercat”.
+                  <span class="not-italic font-bold">Equip de coordinació</span>
+                </p>
+                <a class="font-bold hover:underline underline-offset-4" href="./extra.html">
+                  Descobreix la ruta →
+                </a>
+              </article>
+            </div>
+          </section>
+        </main>
+
+       
+        <footer class="border-t border-black/10">
+          <div class="mx-auto max-w-6xl px-4 py-6 flex flex-col sm:flex-row gap-4 items-center justify-between">
+            <div class="flex items-center gap-3 opacity-90">
+              <img
+                class="h-7 w-auto"
+                src="./assets/images/footer/escut-borriana.webp"
+                alt="Ajuntament de Borriana"
+              />
+              <img
+                class="h-7 w-auto"
+                src="./assets/images/footer/Federacio-comerc.webp"
+                alt="Federació de Comerç"
+              />
+            </div>
+
+            <div class="flex items-center gap-2">
+              <a class="p-2 rounded-lg bg-brand-mint hover:opacity-90" href="#" aria-label="Instagram">
+                <img class="h-4 w-4" src="./assets/images/footer/instagram.svg" alt="" />
+              </a>
+              <a class="p-2 rounded-lg bg-brand-mint hover:opacity-90" href="#" aria-label="Facebook">
+                <img class="h-4 w-4" src="./assets/images/footer/facebook.svg" alt="" />
+              </a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
     <script type="module" src="./assets/scripts/main.js"></script>
-    </body>
+  </body>
 </html>

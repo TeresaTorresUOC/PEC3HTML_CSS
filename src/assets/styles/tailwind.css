@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-bold bg-brand-orange hover:opacity-90;
+  }
+
+  .btn-aqua {
+    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 font-bold bg-brand-aqua hover:opacity-90;
+  }
+
+  .card {
+    @apply rounded-2xl bg-white/90 border border-black/10 shadow-sm p-6;
+  }
+}
